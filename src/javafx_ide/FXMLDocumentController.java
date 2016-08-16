@@ -21,13 +21,19 @@ public class FXMLDocumentController implements Initializable
     @FXML private TextArea Codigo_;
     
     @FXML
-    private void Executar_Codigo(ActionEvent event) throws Exception
+    private void Executar_Codigo(ActionEvent event)
     {
         Codigo.FXML_CodigoController.Text = Codigo_.getText();
         
         Codigo.FXML_CodigoController Abre_Tela = new Codigo.FXML_CodigoController();
         
-        Abre_Tela.start(new Stage());
+        try
+        {
+            Abre_Tela.start(new Stage());
+        }catch(Exception ex)
+        {
+            ex.printStackTrace();
+        }     
     }
    
     @Override

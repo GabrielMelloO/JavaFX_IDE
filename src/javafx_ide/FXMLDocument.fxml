@@ -9,6 +9,6 @@
 <AnchorPane id="AnchorPane" prefHeight="534.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_ide.FXMLDocumentController">
     <children>
         <Button fx:id="Executar" layoutX="610.0" layoutY="14.0" onAction="#Executar_Codigo" prefHeight="28.0" prefWidth="110.0" text="Executar" />
-      <TextArea fx:id="Codigo" layoutX="14.0" layoutY="59.0" prefHeight="463.0" prefWidth="707.0" />
+      <TextArea fx:id="Codigo_" layoutX="14.0" layoutY="59.0" prefHeight="463.0" prefWidth="707.0" />
     </children>
 </AnchorPane>

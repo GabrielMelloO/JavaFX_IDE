@@ -34,15 +34,18 @@ public class FXML_CodigoController implements Initializable
     }
     
     //Cria o Stage da tela de Cadastro e da nome para ele.
+    @FXML
     public static Stage Stage_Cadastro;
     
+    @FXML
     public void start(Stage stage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("Codigo/FXML_Codigo.fxml"));    
+        Parent root = FXMLLoader.load(getClass().getResource("FXML_Codigo.fxml"));    
         Scene scene = new Scene(root);
         stage.setTitle("Codigo");
         stage.setScene(scene);
         stage.show();      
+        
         //O "Stage_Cadastro" vai receber tudo que tem na stage.
         Stage_Cadastro = stage;
     }
